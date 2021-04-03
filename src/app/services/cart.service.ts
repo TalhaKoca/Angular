@@ -9,6 +9,7 @@ import { Product } from '../models/product';
 export class CartService {
 
   constructor() { }
+  
   addToChart(product:Product){
     let item = CartItems.find(c=>c.product.productId==product.productId);
     if (item){
